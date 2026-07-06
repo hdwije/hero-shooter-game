@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Princess Rescue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game" width="800" height="600"></canvas>
+
+    <div id="hud">
+      <span id="hud-level">Level 1</span>
+      <span id="hud-hp">HP: 3</span>
+    </div>
+
+    <div id="start-screen" class="overlay">
+      <h1>Princess Rescue</h1>
+      <p>Arrow keys to move. Space to shoot.</p>
+      <p>Defeat every enemy on both levels to save the princess!</p>
+      <p class="prompt">Press Space or Enter to Start</p>
+    </div>
+
+    <div id="level-transition" class="overlay hidden">
+      <h1 id="transition-text">Level 2</h1>
+    </div>
+
+    <div id="gameover-screen" class="overlay hidden">
+      <h1>Game Over</h1>
+      <p class="prompt">Press R to Restart</p>
+    </div>
+
+    <div id="win-screen" class="overlay hidden">
+      <h1>You Rescued the Princess!</h1>
+      <p class="prompt">Press R to Restart</p>
+    </div>
+  </div>
+
+  <script src="js/constants.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/entities.js"></script>
+  <script src="js/collision.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
