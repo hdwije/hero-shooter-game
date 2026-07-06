@@ -44,3 +44,5 @@ If you add a new script or reorder existing ones, respect this dependency chain.
 ## Git workflow
 
 This project is tracked in git and pushed to `origin` → https://github.com/hdwije/hero-shooter-game (public).
+
+Commit and push after every meaningful change (a feature, fix, or file addition) — don't batch unrelated work into one commit and don't wait to be asked. This repo exists specifically so there is always a saved, revertible version of the game. Each commit message should be clean and explain *why* the change was made, not just what changed (e.g. "Add CLAUDE.md documenting architecture for future sessions" rather than "Update files").
